@@ -7,7 +7,7 @@
 #include <dt-bindings/zmk/rgb.h>
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1300
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20
 
 &mmv { time-to-max-speed-ms = <250>; };
 
