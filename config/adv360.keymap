@@ -7,16 +7,21 @@
 #include <dt-bindings/zmk/rgb.h>
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 22
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 90
 #define U_MOUSE_SCROLL_MAX 10
 
-&mmv { time-to-max-speed-ms = <250>; };
+&mmv {
+  trigger-period-ms = <10>;     // QMK MOUSEKEY_INTERVAL 10
+  time-to-max-speed-ms = <30>;  // QMK MOUSEKEY_TIME_TO_MAX 30
+  acceleration-exponent = <1>;  // default linear move accel
+};
 
 &msc {
-    acceleration-exponent = <1>;
-    trigger-period-ms = <1>;
-    time-to-max-speed-ms = <100>;
-};
+  delay-ms = <0>;               // QMK MOUSEKEY_WHEEL_DELAY 0
+  trigger-period-ms = <90>;     // QMK MOUSEKEY_WHEEL_INTERVAL 90
+  time-to-max-speed-ms = <1>;   // QMK MOUSEKEY_WHEEL_TIME_TO_MAX 1
+  acceleration-exponent = <0>;  // default wheel accel
+}
 
 / {
     behaviors {
