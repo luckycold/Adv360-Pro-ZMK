@@ -4,8 +4,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1800   /* 8 px * 2 speed * (1000/10ms) = ~1600 px/s */
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 15     /* 1 step * (1000/90ms) ≈ 11 steps/s */
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1800
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 15
 #include <dt-bindings/zmk/pointing.h>
 
 /* Mouse Move: match 10 ms interval and 30 updates to max => 300 ms */
