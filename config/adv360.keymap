@@ -6,9 +6,8 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 90
-#define U_MOUSE_SCROLL_MAX 10
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 120
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 2
 
 &mmv {
   trigger-period-ms = <10>;     // QMK MOUSEKEY_INTERVAL 10
