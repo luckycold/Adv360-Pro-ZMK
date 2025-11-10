@@ -7,15 +7,15 @@
 #include <dt-bindings/zmk/rgb.h>
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 30
-#define U_MOUSE_SCROLL_MAX 7
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 22
+#define U_MOUSE_SCROLL_MAX 10
 
 &mmv { time-to-max-speed-ms = <250>; };
 
 &msc {
     acceleration-exponent = <1>;
     trigger-period-ms = <1>;
-    time-to-max-speed-ms = <50>;
+    time-to-max-speed-ms = <100>;
 };
 
 / {
