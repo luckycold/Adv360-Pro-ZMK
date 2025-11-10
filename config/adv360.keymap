@@ -20,7 +20,7 @@
   trigger-period-ms = <90>;
   time-to-max-speed-ms = <1>;
   acceleration-exponent = <1>;
-}
+};
 
 / {
     behaviors {
