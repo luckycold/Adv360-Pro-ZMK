@@ -10,16 +10,16 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 2
 
 &mmv {
-  trigger-period-ms = <10>;     // QMK MOUSEKEY_INTERVAL 10
-  time-to-max-speed-ms = <30>;  // QMK MOUSEKEY_TIME_TO_MAX 30
-  acceleration-exponent = <1>;  // default linear move accel
+  trigger-period-ms = <10>;
+  time-to-max-speed-ms = <30>;
+  acceleration-exponent = <1>;
 };
 
 &msc {
-  delay-ms = <0>;               // QMK MOUSEKEY_WHEEL_DELAY 0
-  trigger-period-ms = <90>;     // QMK MOUSEKEY_WHEEL_INTERVAL 90
-  time-to-max-speed-ms = <1>;   // QMK MOUSEKEY_WHEEL_TIME_TO_MAX 1
-  acceleration-exponent = <0>;  // default wheel accel
+  delay-ms = <0>;
+  trigger-period-ms = <90>;
+  time-to-max-speed-ms = <1>;
+  acceleration-exponent = <1>;
 }
 
 / {
