@@ -3,22 +3,23 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1600   /* 8 px * 2 speed * (1000/10ms) = ~1600 px/s */
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 11     /* 1 step * (1000/90ms) ≈ 11 steps/s */
+#include <dt-bindings/zmk/pointing.h>
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 200    // 200 pixels/sec
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 11     // 11 steps/sec
-
+/* Mouse Move: match 10 ms interval and 30 updates to max => 300 ms */
 &mmv {
   trigger-period-ms = <10>;
-  time-to-max-speed-ms = <300>;      // Fast accel like your QMK
+  time-to-max-speed-ms = <300>;
   acceleration-exponent = <1>;
 };
 
+/* Mouse Scroll: avoid chunking by using small tick but keep 90 ms to max */
 &msc {
   delay-ms = <0>;
-  trigger-period-ms = <90>;
-  time-to-max-speed-ms = <90>;       // Instant max speed like your QMK
+  trigger-period-ms = <16>;   /* small tick for smooth ramp */
+  time-to-max-speed-ms = <90>;
   acceleration-exponent = <1>;
 };
 
