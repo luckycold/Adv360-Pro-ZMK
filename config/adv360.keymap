@@ -6,16 +6,19 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 200    // 200 pixels/sec
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 11     // 11 steps/sec
+
 &mmv {
   trigger-period-ms = <10>;
-  time-to-max-speed-ms = <30>;      // Fast accel like your QMK
+  time-to-max-speed-ms = <300>;      // Fast accel like your QMK
   acceleration-exponent = <1>;
 };
 
 &msc {
   delay-ms = <0>;
   trigger-period-ms = <90>;
-  time-to-max-speed-ms = <1>;       // Instant max speed like your QMK
+  time-to-max-speed-ms = <90>;       // Instant max speed like your QMK
   acceleration-exponent = <1>;
 };
 
