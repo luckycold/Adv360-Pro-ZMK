@@ -8,7 +8,6 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 15
 #include <dt-bindings/zmk/pointing.h>
 
-/* Mouse Move: match 10 ms interval and 30 updates to max => 300 ms */
 &mmv {
   trigger-period-ms = <10>;
   time-to-max-speed-ms = <300>;
