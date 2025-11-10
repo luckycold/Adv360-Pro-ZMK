@@ -7,7 +7,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1800
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 13
 
 &mmv {
   trigger-period-ms = <10>;
