@@ -15,10 +15,9 @@
   acceleration-exponent = <1>;
 };
 
-/* Mouse Scroll: avoid chunking by using small tick but keep 90 ms to max */
 &msc {
   delay-ms = <0>;
-  trigger-period-ms = <1>;   /* small tick for smooth ramp */
+  trigger-period-ms = <1>;
   acceleration-exponent = <0>;
 };
 
